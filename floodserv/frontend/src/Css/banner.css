@@ -1,0 +1,16 @@
+.banner{
+    margin: 0;
+    height: 60vh;
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    position: relative;
+    text-align: center;
+    top:40%;
+    letter-spacing: 5px;
+    color: #fff;
+}

@@ -1,0 +1,71 @@
+
+  .box{
+    /* width: 300px; */
+    padding: 10px 10px;
+    margin: 40px 10px;
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    text-align: center;
+    
+    
+  }
+  .box h1{
+    color: rgb(20, 134, 241);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .box textarea[id = "message"]
+  {
+    overflow: hidden;
+  }
+
+  .box input[type = "text"],
+  .box input[type = "password"],
+  .box input[type = "tel"],
+  .box textarea[id = "message"]
+  {
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 350px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.25s;
+  }
+  .box input[type = "text"]:focus,
+  .box input[type = "tel"]:focus,
+  .box input[type = "password"]:focus,
+  .box textarea[id = "message"]:focus{
+    width: 400px;
+    border-color: #2ecc71;
+    border-radius: 7px;
+  }
+  .box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: rgb(6, 0, 90);
+    border-radius: 4px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .box input[type = "submit"]:hover{
+    background: #127ebd;
+    color: #fff;
+    border: 2px solid #0d6294;
+  }
+  

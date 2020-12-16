@@ -1,0 +1,78 @@
+.card {
+    background: rgb(252, 252, 252);
+   display: flex;
+    height: 400px;
+   min-width: 18rem;
+    transition: 0.6s all ease;
+    
+}
+.mycard{
+ 
+  width: 18rem;
+}
+
+.cardTop {
+   
+    transition: 0.4s all ease;
+    height: 65%;
+    border: .5px solid rgb(134, 134, 134);
+    overflow: hidden;
+}
+  
+.cardBottom {
+  background: rgb(255, 255, 255);
+    height: 35%;
+   border: .5px solid rgb(134, 134, 134);
+    transition: 0.4s all ease;
+    overflow: hidden;
+}
+  
+.cardText {
+    min-height: 100%;
+    padding: 20px;
+}
+  
+.cardTitle {
+    font-size: 22px;
+    font-weight: 700;
+   
+    
+}
+.cardBottom a:hover{
+  text-decoration: none;
+  color: rgb(0, 106, 124);
+}
+  
+.cardInfo {
+    font-size: 18px;
+    font-weight: 500;
+   
+
+}
+  
+  /* Hidding the entire so anything we put in will only show on hover */
+  
+
+  /* Hover affects */
+  
+  .card:hover {
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+  
+  }
+  
+  /* Using className + hover followed by child element allows you to change child elements when parent is hovered */
+  
+  
+  .card:hover .cardBottom {
+    transition: 0.4s all ease;
+    height: 50%;
+    opacity: 1;
+    
+  }
+  
+  .card:hover .cardTop {
+    height: 50%;
+    opacity: 0.8;
+    transition: 0.4s all ease;
+  }
+  
