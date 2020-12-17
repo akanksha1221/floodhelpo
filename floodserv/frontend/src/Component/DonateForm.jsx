@@ -3,34 +3,64 @@ import '../Css/DonateForm.css';
 function DonateForm(){
     return(
         <>
-          <div class="container">
+          <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12 col-xl-8 col-lg-8 form-container">
-                
-                        <form class="form-horizontal" method="post">
-                            <fieldset>
-                                <legend class="text-center header">Helping Hands</legend>
-                               <input id="fname" name="name" type="text" placeholder="Full Name" class="form-control"/><br/>
-                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control"/><br/>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="Check1"/>
-                                    <label class="form-check-label" for="Check1">Funds</label>
-                                </div>
-                                <div className="form-check">
-                                    <input type="checkbox" class="form-check-input" id="Check2"/>
-                                    <label class="form-check-label" for="Check2">Food</label>
-                                </div>
-                                <div className="form-check">
-                                    <input type="checkbox" class="form-check-input" id="Check3"/>
-                                    <label class="form-check-label" for="Check3">Medicines</label>
-                                </div>
-                                <textarea class="form-control" id="message" name="message" placeholder="Description of items. No. of items,Packets. Quantity, Product name" rows="7"></textarea><br/>
-                                <button type="submit" class="btn btn-primary">Send</button><br/>   
-                            </fieldset>
+                    <div class="col f-bg">
+                       <div className=" wrapper">
+                       <form class="form" action="/donateinfo" method="post">
+                            <h1 class="title">Donation Form</h1>
+                            <div class="inputfield">
+                                <label>Name</label>
+                                <input name="name" type="text" class="input"/>
+                            </div>  
+                            <div class="inputfield">
+                                <label>Email Address</label>
+                                <input name="email" type="text" class="input"/>
+                            </div>       
+                            <div class="inputfield">
+                                <label>Phone Number</label>
+                                <input name="phone" type="text" class="input"/>
+                            </div> 
+                            <div class="inputfield">
+                                <label>Address</label>
+                                <textarea name="address" class="textarea"></textarea>
+                            </div> 
+                            <div class="inputfield">
+                                <label>Postal Code</label>
+                                <input name="postalcode" type="text" class="input"/>
+                            </div> 
+                            <div class="inputfield terms">
+
+                                <label class="check">
+                                <input type="checkbox"/>
+                                <span class="checkmark"></span>
+                                </label><p>Eatables</p>
+                                
+                                <label class="check">
+                                <input type="checkbox"/>
+                                <span class="checkmark"></span>
+                                </label><p>Medicines</p>
+                                
+                                <label class="check">
+                                <input type="checkbox"/>
+                                <span class="checkmark"></span>
+                                </label><p>Clothes</p>
+
+                            </div> 
+                            <div class="inputfield">
+                                <label>Discription</label>
+                                <textarea name="discription" class="textarea"></textarea>
+                            </div> 
+                            <div class="inputfield">
+                                <input type="submit" name="submit" value="Submit" class="btn"/>
+                            </div>
                         </form>
-                    </div>
+                    
+                       </div>
+                       </div>	
                 </div>
             </div>
+            
         </>
     )
 }

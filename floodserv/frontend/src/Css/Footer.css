@@ -1,6 +1,6 @@
 .footer-container {
     background-color: rgb(248, 252, 255);
-   margin-bottom: 25px ;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +8,17 @@
     border-top: 2px solid #4dd2f3;
    
   }
+.contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  margin-top: 20px;  
+  width: 90%;
+}
+.contact b{
+  color: #1d66b9;
+}
   .social-icon-link {
     color: rgb(165, 165, 165);
     font-size: 24px;
@@ -25,7 +36,7 @@
     align-items: center;
     width: 90%;
     max-width: 1000px;
-    margin: 40px auto 0 auto;
+    margin: 10px auto 40px auto;
   }
   
   .social-icons {
@@ -52,6 +63,7 @@
   }
   .website-rights {
     color: rgb(0, 63, 134);
+    margin: 5px;
     
   }
   .fb:hover{

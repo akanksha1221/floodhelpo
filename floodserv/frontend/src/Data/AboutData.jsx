@@ -5,12 +5,14 @@ const AboutData = [
     {
         para:"Floods endanger human lives, cause huge environmental consequences, for example when installations holding large quantities of toxic chemicals are inundated or wetland areas destroyed, while they can also provoke heavy economic losses."
     },
-    
+    {
+        para:""
+    },
     {
         para:"In this context, we have thought that significant risk reduction in large international basins can only be achieved through transnational, interdisciplinary and stakeholder-oriented approaches within the framework of a joint transnational research project that will focus on flood risk management."
     },
     {
-        para:"So, FLOOD-helpo created a system that can access different flood-related datasets across a broad number of different sources (sensors, social media and open data) and make sense of them on different mobile technologies – tablets and smartphones but also on laptops and PCs – in a way that helps the end users (public authorities, emergency personnel and citizens."
+        para:"FloodHelpo try to create awareness among people so that they are aware of the flood, and the damages it causes. So, FLOOD-helpo created a system that can access different flood-related datasets across a broad number of different sources (sensors, social media and open data) and make sense of them on different mobile technologies – tablets and smartphones but also on laptops and PCs – in a way that helps the end users (public authorities, emergency personnel and citizens."
     }
 ]
 

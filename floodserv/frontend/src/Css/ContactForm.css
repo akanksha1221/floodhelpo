@@ -21,6 +21,7 @@
   .box textarea[id = "message"]
   {
     overflow: hidden;
+    resize: none;
   }
 
   .box input[type = "text"],

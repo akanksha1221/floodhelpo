@@ -4,13 +4,6 @@ const HomeData = [
     },
     {
         para:"An average every year, 75 lakh hectares of land is affected, 1600 lives are lost and the damage caused to crops, houses and public utilities is Rs.1805 crores due to floods. The maximum number of lives (11,316) was lost in the year 1977. The frequency of major floods is more than once in five years."
-    },
-    
-    {
-        para:""
-    },
-    {
-        para:""
     }
 ]
 

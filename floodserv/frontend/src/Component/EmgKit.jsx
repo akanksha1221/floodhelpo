@@ -1,11 +1,11 @@
 import React from 'react';
-
 function EmgKit(props){
     return(
 
         <>
-            <h4>Emergency Kit</h4>
-           <ul>
+            <div className="emg">
+            <h3>Emergency Kit</h3>
+           <ul  className="list">
                <li>Battery operated torch</li>
                <li>Extra batteries</li>
                <li>Battery operated radio</li>
@@ -19,6 +19,8 @@ function EmgKit(props){
                <li>Thick ropes and cords</li>
                <li>Shoes</li>
            </ul>
+            </div>
+            
                
             
         </>

@@ -1,15 +1,10 @@
 import React from 'react';
-
 function HomeInfo(props){
     return(
-
-        <>
-            
-            <div className=" homeinfo">
+        <>   
+            <div className="homeinfo">  
                 <p>{props.para}</p>               
-            </div>
-               
-            
+            </div>   
         </>
     )
 }

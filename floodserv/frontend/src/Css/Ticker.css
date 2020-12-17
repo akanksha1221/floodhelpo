@@ -8,7 +8,7 @@
   .ticker-wrap {
     width: 100%;
     padding-left: 100%; /* Push contents to right side of screen */
-    background-color: rgb(251, 255, 0);
+    background-color: rgb(252, 255, 60);
   }
   
   /* INNER CONTAINER */
@@ -21,7 +21,7 @@
     display: inline-block;
     white-space: nowrap;
     padding-right: 100%;
-    animation: ticker 30s linear 2s infinite ;
+    animation: ticker 15s linear 2s infinite ;
     
   }
   .ticker-move:hover{
@@ -29,8 +29,13 @@
   }
   
   /* ITEMS */
-  .ticker-item{
+  .ticker-item {
     display: inline-block; /* Lay items in a horizontal line */
     padding: 4px 2px;
+   
+    margin-right: 50px;
+  }
+  .ticker-item a{
     color: #000;
+    text-decoration: none;
   }

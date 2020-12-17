@@ -4,13 +4,8 @@ import '../Css/AboutInfo.css';
 
 function AboutInfo(props){
     return(
-        <>
-            
-            <div className=" aboutinfo">
-                <p>{props.para}</p>               
-            </div>
-               
-            
+        <>           
+            <p>{props.para}</p>
         </>
     )
 }

@@ -12,12 +12,13 @@ function Navbar(){
     const handleClick =()=> setClick(!click);
     const closeMobileMenu =()=> setClick(false);
 
+    
 return(
     <> 
         <div className="container-fluid top-header">
             <div className="row">
                 <div className="col-6"><a href="tel:+919090909090" className="topLink"><FiPhone className="phone"/> 9090909090 </a></div>
-                <div className="col-6 text-right"><a href="mailto:abc@gmail.com" className="topLink"><FiMail className="mail"/> abc@gmail.com</a></div>
+                <div className="col-6 text-right"><a href="mailto:abc@gmail.com" className="topLink"><FiMail className="mail"/> floodhelpo@xyz.com</a></div>
             </div>
         </div>
         <div className="logo">

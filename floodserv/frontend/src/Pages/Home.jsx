@@ -6,6 +6,7 @@ import HomeData from '../Data/HomeData';
 import SData from '../Data/SlideshowData';
 import HomeInfo from '../Component/HomeInfo';
 import Emergency from '../Component/EmgKit';
+import "../Css/Home.css"
 
 function Home(){
     return(
@@ -17,7 +18,7 @@ function Home(){
             <div className="container home">
                 <div className="row">
                     <div className="col-lg-8">
-                        <h1>FLOODs In India</h1>
+                        <h2>Floods In India</h2>
                         {HomeData.map((val,index)=>{
                             return(
                                  <HomeInfo para={val.para}/>

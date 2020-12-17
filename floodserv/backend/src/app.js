@@ -3,6 +3,8 @@ const path = require("path");
 const app = express();
 require("./db/conn");
 const Contact = require("./models/contact");
+const Donate = require("./models/donate");
+
 const port =process.env.PORT || 8000;
 
 const static_path = path.join(__dirname,'../../', 'frontend/src/component/contactform');
@@ -30,6 +32,24 @@ app.post("/saved", async (req,res)=>{
       })
       const people = await contactPeople.save();
       res.status(201).send("information Stored!");
+   }
+   catch(e){
+       res.status(400).send(e);
+   }
+});
+app.post("/donateinfo", async (req,res)=>{
+   try{
+      const donar = new Donate({
+          name: req.body.name,
+          email: req.body.email,
+          phone: req.body.phone,
+          address: req.body.address,
+          postalcode: req.body.postalcode,
+          discription: req.body.discription
+
+      })
+      const Dpeople = await donar.save();
+      res.status(201).send("Donation information Stored!");
    }
    catch(e){
        res.status(400).send(e);

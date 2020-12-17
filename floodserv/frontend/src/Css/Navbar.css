@@ -1,3 +1,4 @@
+
 .logo img{
    /* width: 250px;*/
     height: 170px;
@@ -33,7 +34,7 @@ nav{
 .nav-list{
     display: flex;
     align-items: center;
-    
+    z-index: 1;
     background-color: rgb(62, 182, 252);
     width: 70%;
     margin-bottom: 0;
@@ -72,7 +73,6 @@ nav{
   }
   @media screen and (max-width: 750px) {
       nav{
-       
          min-height: 0;
       }
     .nav-list{

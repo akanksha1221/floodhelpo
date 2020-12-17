@@ -8,13 +8,13 @@ function Slideshow(props){
         <>
           <div className="container">
           <Carousel>
-            <Carousel.Item>
+            <Carousel.Item >
             <a href="https://pib.gov.in/PressReleseDetailm.aspx?PRID=1631096" target="_blank">
               <img
                 className="d-block w-100 "
                 src={c1}
                 alt="First slide"
-                link=""
+                
               />
             </a>
               {/* <Carousel.Caption>
@@ -39,7 +39,16 @@ function Slideshow(props){
                 alt="Third slide"
               />
               </a>
-          </Carousel.Item>
+            </Carousel.Item>
+            <Carousel.Item>
+              <a href="https://www.gktoday.in/gk/ndma-guidelines-on-flood-management/#:~:text=The%20state%20governments%20has%20to,to%20take%20shelter%20during%20floods." target="_blank">
+              <img
+                className="d-block w-100"
+                src={c3}
+                alt="Third slide"
+              />
+              </a>
+            </Carousel.Item>
           </Carousel> 
           </div>
         </>
