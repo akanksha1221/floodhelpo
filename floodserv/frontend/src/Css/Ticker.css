@@ -1,36 +1,32 @@
 .tcontainer {
     margin-top: 4px;
     width: 100%;
-    overflow: hidden; /* Hide scroll bar */
+    overflow: hidden;
   }
    
-  /* MIDDLE CONTAINER */
   .ticker-wrap {
     width: 100%;
-    padding-left: 100%; /* Push contents to right side of screen */
+    padding-left: 100%; 
     background-color: rgb(252, 255, 60);
   }
   
-  /* INNER CONTAINER */
   @keyframes ticker {
     0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-200%, 0, 0); }
+    100% { transform: translate3d(-300%, 0, 0); }
   }
   .ticker-move {
-    /* Basically move items from right side of screen to left in infinite loop */
     display: inline-block;
     white-space: nowrap;
     padding-right: 100%;
-    animation: ticker 15s linear 2s infinite ;
+    animation: ticker 20s linear 2s infinite ;
     
   }
   .ticker-move:hover{
-    animation-play-state: paused; /* Pause scroll on mouse hover */
+    animation-play-state: paused;
   }
   
-  /* ITEMS */
   .ticker-item {
-    display: inline-block; /* Lay items in a horizontal line */
+    display: inline-block;
     padding: 4px 2px;
    
     margin-right: 50px;

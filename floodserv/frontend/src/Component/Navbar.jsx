@@ -3,7 +3,6 @@ import { NavLink,Link } from 'react-router-dom';
 import '../Css/Navbar.css';
 import {FiMail,FiPhone} from 'react-icons/fi';
 import {FaBars,FaTimes} from 'react-icons/fa';
-/*import {BsFillPersonFill} from 'react-icons/bs';*/
 import logo from '../images/Logo1.png';
 import { IconContext } from 'react-icons/lib';
 
@@ -35,7 +34,6 @@ return(
                     <li><NavLink className='nav-link' onClick={closeMobileMenu} to="/contact">contact</NavLink></li>
                     <li><NavLink className='nav-link' onClick={closeMobileMenu} to="/about">About Us</NavLink></li>
                     <li><NavLink className='nav-link' onClick={closeMobileMenu} to="/donate">donate</NavLink></li>
-                    {/* <li><NavLink className='nav-link' onClick={closeMobileMenu} to="/login"><BsFillPersonFill/></NavLink></li>*/}
                 </ul>
             </nav>
         </IconContext.Provider>         

@@ -21,7 +21,6 @@ app.set('view engine', 'html');
     res.render("index")
 }); */
 
-
 app.post("/saved", async (req,res)=>{
    try{
       const contactPeople = new Contact({

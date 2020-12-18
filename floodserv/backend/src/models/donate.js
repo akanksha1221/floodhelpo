@@ -26,7 +26,6 @@ const donateSchema = new mongoose.Schema({
         type: String,
         required: true
     }
-    
 })
 
 const Donate = new mongoose.model("Donate", donateSchema);

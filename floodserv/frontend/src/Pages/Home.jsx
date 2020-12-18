@@ -1,9 +1,7 @@
 import React from 'react';
-import Slider from '../Component/Slider';
 import Ticker from '../Component/Ticker';
 import Slides from '../Component/Slideshow';
 import HomeData from '../Data/HomeData';
-import SData from '../Data/SlideshowData';
 import HomeInfo from '../Component/HomeInfo';
 import Emergency from '../Component/EmgKit';
 import "../Css/Home.css"
@@ -12,8 +10,6 @@ function Home(){
     return(
         <>
             <Ticker />
-           
-            {/*<Slider/>*/}
             <Slides/>
             <div className="container home">
                 <div className="row">
@@ -29,9 +25,7 @@ function Home(){
                         <Emergency/>
                     </div>
                 </div>
-           
             </div>
-            
         </>
     )
 }
