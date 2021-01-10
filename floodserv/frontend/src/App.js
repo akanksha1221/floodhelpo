@@ -1,11 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import News from './Pages/News';
 import Contact from './Pages/Contact';
 import Donate from './Pages/Donate';
+import Donar from './Pages/Donardetails';
+import Contactsaved from './Pages/Contactsave';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 
@@ -19,6 +21,8 @@ function App() {
         <Route path='/contact' component={Contact} />
         <Route path='/about' component={About} />
         <Route path='/donate' component={Donate} />         
+        <Route path='/donar' component={Donar} />         
+        <Route path='/contactsaved' component={Contactsaved} />         
       </Switch>
       <Footer />
     </Router>

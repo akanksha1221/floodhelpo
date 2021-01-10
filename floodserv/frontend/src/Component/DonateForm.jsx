@@ -8,18 +8,18 @@ function DonateForm(){
                     <div class="col f-bg">
                        <div className=" wrapper">
                        <form class="form" action="/donateinfo" method="post">
-                            <h1 class="title">Donation Form</h1>
+                            <h1 class="title">Fundraiser</h1>
                             <div class="inputfield">
                                 <label>Name</label>
                                 <input name="name" type="text" class="input"/>
                             </div>  
                             <div class="inputfield">
-                                <label>Email Address</label>
-                                <input name="email" type="text" class="input"/>
+                                <label>Email </label>
+                                <input name="email" type="email" class="input"/>
                             </div>       
                             <div class="inputfield">
                                 <label>Phone Number</label>
-                                <input name="phone" type="text" class="input"/>
+                                <input name="phone" type="tel" class="input"/>
                             </div> 
                             <div class="inputfield">
                                 <label>Address</label>
@@ -29,30 +29,12 @@ function DonateForm(){
                                 <label>Postal Code</label>
                                 <input name="postalcode" type="text" class="input"/>
                             </div> 
-                            <div class="inputfield terms">
-
-                                <label class="check">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                                </label><p>Eatables</p>
-                                
-                                <label class="check">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                                </label><p>Medicines</p>
-                                
-                                <label class="check">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                                </label><p>Clothes</p>
-
-                            </div> 
                             <div class="inputfield">
-                                <label>Discription</label>
-                                <textarea name="discription" class="textarea"></textarea>
-                            </div> 
+                                <label>Amount</label>
+                                <input name="amount" type="number" class="input"/>
+                            </div>
                             <div class="inputfield">
-                                <input type="submit" name="submit" value="Submit" class="btn"/>
+                                <input type="submit" name="submit" value="Donate" class="btn"/>
                             </div>
                         </form>
                     

@@ -22,8 +22,8 @@ const donateSchema = new mongoose.Schema({
     postalcode:{
         type: Number
     },
-    discription:{
-        type: String,
+    amount:{
+        type: Number,
         required: true
     }
 })
