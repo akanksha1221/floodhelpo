@@ -8,7 +8,7 @@ function NewsCard(props){
             <div className="card">
                 <img className="cardTop" src={props.imgsrc} alt="images"/>            
                 <div className="cardBottom">
-                    <a href={props.link} target="_blank" >
+                    <a href={props.link} target="_blank" rel="noreferrer">
                     <div className="cardText">                     
                         <h3 className="cardTitle">{props.title}</h3>                       
                     </div>

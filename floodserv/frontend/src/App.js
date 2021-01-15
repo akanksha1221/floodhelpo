@@ -10,19 +10,20 @@ import Donar from './Pages/Donardetails';
 import Contactsaved from './Pages/Contactsave';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
-
+import Error from './Component/Error';
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
         <Route exact path='/'  component={Home} />
-        <Route path='/news' component={News} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/about' component={About} />
-        <Route path='/donate' component={Donate} />         
-        <Route path='/donar' component={Donar} />         
-        <Route path='/contactsaved' component={Contactsaved} />         
+        <Route exact path='/news' component={News} />
+        <Route exact path='/contact' component={Contact} />
+        <Route exact path='/about' component={About} />
+        <Route exact path='/donate' component={Donate} />         
+        <Route exact path='/donar' component={Donar} />         
+        <Route exact path='/contactsaved' component={Contactsaved} />         
+        <Route component={Error} />         
       </Switch>
       <Footer />
     </Router>

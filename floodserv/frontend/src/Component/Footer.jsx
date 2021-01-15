@@ -18,19 +18,19 @@ function Footer() {
           </div>
           
           <div className='social-icons'>
-            <Link className='social-icon-link fb' to='/' target='_blank' aria-label='Facebook'>
+            <Link className='social-icon-link fb' to='/' target='_blank' aria-label='Facebook' rel="noopener noreferrer">
               <FaFacebook />
             </Link>
-            <Link className='social-icon-link ig' to='/' target='_blank' aria-label='Instagram'>
+            <Link className='social-icon-link ig' to='/' target='_blank' aria-label='Instagram'rel="noopener noreferrer">
               <FaInstagram />
             </Link>
-            <Link className='social-icon-link yt' to='/' target='_blank' aria-label='Youtube'>
+            <Link className='social-icon-link yt' to='/' target='_blank' aria-label='Youtube' rel="noopener noreferrer">
               <FaYoutube />
             </Link>
-            <Link className='social-icon-link tw' to='/' target='_blank' aria-label='Twitter'>
+            <Link className='social-icon-link tw' to='/' target='_blank' aria-label='Twitter' rel="noopener noreferrer">
               <FaTwitter />
             </Link>
-            <Link className='social-icon-link ln' to='/' target='_blank' aria-label='LinkedIn'>
+            <Link className='social-icon-link ln' to='/' target='_blank' aria-label='LinkedIn' rel="noopener noreferrer">
               <FaLinkedin />
             </Link>
           </div>

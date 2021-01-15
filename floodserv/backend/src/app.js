@@ -1,31 +1,21 @@
 const express = require("express");
 const path = require("path");
+const cors = require("cors");
 const app = express();
 require("./db/conn");
 const Contact = require("./models/contact");
 const Donate = require("./models/donate");
-/*
-var fs = require('fs');
-var dData = fs.readFileSync('./Data/DoData.json');
-var donated = JSON.parse(dData);
-console.log(donated);
-*/
+
 const port =process.env.PORT || 8000;
 
-const static_path = path.join(__dirname,'../../', 'frontend/src/component/contactform');
-const donData = path.join(__dirname,'../../', 'frontend/src/Data/Donatordata');
-
+const static_path = path.join(__dirname,'../../', 'frontend/public/index');
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(express.static(static_path));
-
+app.use(cors());
 
 app.set('view engine', 'html');
-
-app.get("/",(req,res)=>{
-    res.render("index")
-});
 
 app.post("/saved", async (req,res)=>{
    try{
@@ -39,7 +29,7 @@ app.post("/saved", async (req,res)=>{
       res.status(201).redirect('/contactsaved');
    }
    catch(e){
-       res.status(400).send(e);
+       res.status(400).send(JSON.stringify(e));
    }
 });
 app.post("/donateinfo", async (req,res)=>{
@@ -54,22 +44,25 @@ app.post("/donateinfo", async (req,res)=>{
 
       })
       const Dpeople = await donar.save();
+      
       res.status(201).redirect('/donar');
+     
    }
    catch(e){
-       res.status(400).send(e);
+       res.status(400).send(JSON.stringify(e));
    }
 });
-/*
-app.get('/donar',function(req,res){
-    Donate.find({},function(err,docs){
+
+
+app.get('/donar',async (req,res)=>{
+    Donate.find({},(err,result)=>{
         if(err)
-            res.json(err);
-        else
-            res.fs.writeFileSync('doData.json', JSON.stringify(docs));
-    });
+            res.send(err);
+        res.send(result);
+    }).sort({"amount":-1});
 })
-*/
+
+
 app.listen(port,()=>{
     console.log(`server at ${port}`);
 })

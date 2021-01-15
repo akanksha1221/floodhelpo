@@ -1,8 +1,7 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
 import '../Css/contsave.css';
 function Contactsave(){
-    let history = useHistory();
+ 
     return(
         <>
           <div class="container-fluid">
@@ -10,7 +9,7 @@ function Contactsave(){
                     <div class="col bg">
                        <div className=" body">
                             <p class="text">INFORMATION STORED!<br/>We will contact you shortly.<br/>
-                            <button onClick={() => history.goBack()}>Go back!</button>
+                            <a href="/contact"><button>Go back!</button></a>
                             </p>
                        </div>
                        </div>	

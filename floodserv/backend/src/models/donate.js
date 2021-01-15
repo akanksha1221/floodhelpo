@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const donateSchema = new mongoose.Schema({
+    seq:{ 
+        type: Number, 
+        default: 1
+    },
     name:{
         type: String,
         required: true
