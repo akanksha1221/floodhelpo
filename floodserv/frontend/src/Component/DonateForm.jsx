@@ -8,7 +8,7 @@ function DonateForm(){
                     <div class="col f-bg">
                        <div className=" wrapper">
                        <form class="form" action="/donateinfo" method="post">
-                            <h1 class="title">Fundraiser</h1>
+                            <h1 >Fundraiser</h1>
                             <div class="inputfield">
                                 <label>Name</label>
                                 <input name="name" type="text" class="input"/>
@@ -23,7 +23,7 @@ function DonateForm(){
                             </div> 
                             <div class="inputfield">
                                 <label>Address</label>
-                                <textarea name="address" class="textarea"></textarea>
+                                <textarea name="address" class="textarea" ></textarea>
                             </div> 
                             <div class="inputfield">
                                 <label>Postal Code</label>

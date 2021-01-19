@@ -5,6 +5,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: down 2s;
+}
+@keyframes down{
+    0%{
+       transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 .title{
     position: relative;
@@ -12,4 +21,14 @@
     top:40%;
     letter-spacing: 5px;
     color: #fff;
+    animation: space 2s;
+    overflow: hidden;
+}
+@keyframes space{
+    0%{
+        letter-spacing: 50px;
+    }
+    100%{
+        letter-spacing: 5px;
+    }
 }

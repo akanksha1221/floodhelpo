@@ -1,13 +1,15 @@
 .footer-container {
     background-color: rgb(248, 252, 255);
-
+  
+    padding-top: 20px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #4dd2f3;
+    border-top: 2px solid #00a3d4;
    
   }
+  /*
 .contact{
   display: flex;
   justify-content: space-between;
@@ -19,6 +21,7 @@
 .contact b{
   color: #1d66b9;
 }
+*/
   .social-icon-link {
     color: rgb(165, 165, 165);
     font-size: 24px;
@@ -47,7 +50,7 @@
   }
   
   .social-logo {
-    color: rgb(29, 112, 167);
+    color: rgb(35, 144, 218);
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -59,7 +62,7 @@
   }
   .social-logo:hover{
     text-decoration: none;
-    color: #3f4453;
+    color: #0a6bc5;
   }
   .website-rights {
     color: rgb(0, 63, 134);

@@ -7,11 +7,13 @@ import {FaFacebook,FaInstagram,FaYoutube,FaTwitter,FaLinkedin} from 'react-icons
 function Footer() {
   return (
     <div className='footer-container '>
+     { /*
       <div className="contact row">
           <div className="col-lg-4 "><p><b>Postal Address:</b> NDMA Bhawan A-1, Safdarjung Enclave, New Delhi - 110029</p></div>
           <div className="col-lg-4"><p> <b> Control Room:</b> +91-11-26701728 (Mon-Fri 24X7)</p></div>
           <div className="col-lg-4"><p><b>Telephones:</b> +91-11-26701700 (Mon-Fri - 9:30AM-6:00PM)</p></div>
         </div>
+        */}
         <div className='social-media-wrap '>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>FloodHelpo</Link>
@@ -34,7 +36,7 @@ function Footer() {
               <FaLinkedin />
             </Link>
           </div>
-          <small className='website-rights'>All rights reserved FloodHelpo © 2020</small>
+          <small className='website-rights'>All rights reserved akankshakumari ©2021</small>
         </div>
         
           

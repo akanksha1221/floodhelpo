@@ -12,6 +12,12 @@ import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import Error from './Component/Error';
 function App() {
+  const spinner = document.getElementById('spinner');
+
+  if (spinner && !spinner.hasAttribute('hidden')) {
+  spinner.setAttribute('hidden', 'true');
+  }
+  
   return (
     <Router>
       <Navbar />

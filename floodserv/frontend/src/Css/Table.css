@@ -18,7 +18,6 @@ body {
     display: flex;
     justify-content: space-around;
     margin-bottom: 2px;
-    margin-left: -35px;
   }
   .responsive-table .table-header {
     background-color: #95a5a6;
@@ -39,3 +38,17 @@ body {
   .responsive-table .right{
     text-align: right;
   }
+
+  @media screen and (max-width: 420px){
+    .responsive-table li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+     }
+     .responsive-table .left,
+    .responsive-table .right{
+      text-align: center;
+      padding: 0;
+    }
+}

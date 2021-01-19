@@ -2,6 +2,7 @@
     margin-top: 4px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 4px;
   }
    
   .ticker-wrap {
@@ -18,20 +19,21 @@
     display: inline-block;
     white-space: nowrap;
     padding-right: 100%;
-    animation: ticker 20s linear 2s infinite ;
+    animation: ticker 24s linear 0s infinite ;
     
   }
   .ticker-move:hover{
     animation-play-state: paused;
+    cursor: pointer;
   }
   
   .ticker-item {
     display: inline-block;
     padding: 4px 2px;
-   
     margin-right: 50px;
   }
   .ticker-item a{
     color: #000;
+    font-weight: 550;
     text-decoration: none;
   }
